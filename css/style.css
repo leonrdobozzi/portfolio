@@ -1,0 +1,471 @@
+:root {
+  --primary-color: #fff;
+  --secondary-color: #132435;
+  --secondary-support-color: #131a36;
+  --contrast-color: #f8941a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+p,
+input,
+textarea {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  padding: 50px 20px 20px;
+}
+
+body {
+  background: rgb(19, 36, 53);
+  background: linear-gradient(
+    0deg,
+    rgba(19, 36, 53, 1) 0%,
+    rgba(19, 26, 54, 1) 35%
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header h1 {
+  color: var(--primary-color);
+  font-size: 24px;
+}
+
+header h1 span::before {
+  content: "</";
+  color: var(--contrast-color);
+}
+
+header h1 span::after {
+  content: ">";
+  color: var(--contrast-color);
+}
+
+header p {
+  color: var(--primary-color);
+  font-weight: 100;
+  font-size: 16px;
+  margin-top: 20px;
+  line-height: 22px;
+}
+
+.my-skills {
+  margin: 40px 0;
+  background-color: var(--secondary-color);
+  padding: 24px;
+  border-radius: 20px;
+}
+
+.my-skills h2 {
+  color: var(--primary-color);
+  font-size: 24px;
+  text-align: center;
+}
+
+.my-skills h2::before {
+  content: "</";
+  color: var(--contrast-color);
+}
+
+.my-skills h2::after {
+  content: ">";
+  color: var(--contrast-color);
+}
+
+.my-skills .skills h3 {
+  color: var(--primary-color);
+  font-size: 14px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.my-skills .skills hr {
+  border-color: var(--contrast-color);
+  margin: 30px 0;
+}
+
+.my-skills .skills .skills-container {
+  display: flex;
+  align-items: top;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.my-projects h2 {
+  color: var(--primary-color);
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.my-projects h2::before {
+  content: "</";
+  color: var(--contrast-color);
+}
+
+.my-projects h2::after {
+  content: ">";
+  color: var(--contrast-color);
+}
+
+.my-projects .projects .slider div img {
+  margin: 0 auto;
+  display: block;
+}
+
+.my-projects .projects .slider div .slide-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.my-projects .projects .slider div h3 {
+  display: block;
+  margin: 0 auto;
+  color: var(--primary-color);
+}
+
+.my-projects .projects a {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.tns-controls,
+.tns-nav,
+button[data-action] {
+  display: none;
+}
+
+.contact h2 {
+  color: var(--primary-color);
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 100px;
+}
+
+.contact h2::before {
+  content: "</";
+  color: var(--contrast-color);
+}
+
+.contact h2::after {
+  content: ">";
+  color: var(--contrast-color);
+}
+
+.contact p {
+  color: var(--primary-color);
+  font-size: 16px;
+  text-align: center;
+  font-weight: 200;
+  margin-bottom: 20px;
+}
+
+.contact .contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.experiences h2 {
+  color: var(--primary-color);
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 100px;
+}
+
+.experiences h2::before {
+  content: "</";
+  color: var(--contrast-color);
+}
+
+.experiences h2::after {
+  content: ">";
+  color: var(--contrast-color);
+}
+
+.experiences > p {
+  color: var(--primary-color);
+  font-size: 16px;
+  text-align: center;
+  font-weight: 200;
+  margin-bottom: 20px;
+}
+
+.experiences .timeline p {
+  color: var(--contrast-color);
+  font-weight: 200;
+  font-size: 10px;
+}
+
+.experiences .timeline .line .first-line {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(0%, -50%);
+}
+
+.experiences .timeline .line {
+  position: relative;
+  height: 200px;
+}
+
+.experiences .timeline .line .first-line .intern-line {
+  width: 1px;
+  height: 50px;
+  background: var(--contrast-color);
+  display: block;
+}
+
+.experiences .timeline .line .first-line .intern-line::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  background: var(--contrast-color);
+  display: block;
+  border-radius: 3px;
+  transform: translate(-2.5px, 0);
+}
+
+.experiences .timeline .line .first-line .intern-line::after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  background: var(--contrast-color);
+  display: block;
+  border-radius: 3px;
+  transform: translate(-2.5px, 0);
+  position: absolute;
+  bottom: 15px;
+}
+
+.experiences .timeline .line .second-line {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  bottom: 18%;
+  left: 40%;
+}
+
+.experiences .timeline .line .second-line .intern-line {
+  width: 1px;
+  height: 50px;
+  background: var(--contrast-color);
+  display: block;
+}
+
+.experiences .timeline .line .second-line .intern-line::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  background: var(--contrast-color);
+  display: block;
+  border-radius: 3px;
+  transform: translate(-2.5px, 0);
+}
+
+.experiences .timeline .line .third-line {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 18%;
+  left: 70%;
+}
+
+.experiences .timeline .line .third-line .intern-line {
+  width: 1px;
+  height: 50px;
+  background: var(--contrast-color);
+  display: block;
+}
+
+.experiences .timeline .line .third-line .intern-line::after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  background: var(--contrast-color);
+  display: block;
+  border-radius: 3px;
+  transform: translate(-2.5px, 0);
+  position: absolute;
+  bottom: 0px;
+}
+
+.experiences .timeline .line .big-line {
+  width: 90%;
+  height: 1px;
+  background: var(--contrast-color);
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.experiences .timeline .line .big-line::before {
+  content: "2021";
+  color: var(--contrast-color);
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  opacity: 0.4;
+  font-weight: 200;
+  position: absolute;
+  left: -20px;
+  top: -15px;
+  writing-mode: vertical-rl;
+}
+
+.experiences .timeline .line .big-line::after {
+  content: "2024";
+  color: var(--contrast-color);
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  opacity: 0.4;
+  font-weight: 200;
+  position: absolute;
+  right: -20px;
+  top: -15px;
+  writing-mode: vertical-rl;
+}
+
+section {
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+}
+
+section.show {
+  opacity: 1;
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    padding: 100px 40px 40px;
+  }
+
+  header h1 {
+    font-size: 96px;
+  }
+
+  header p {
+    font-size: 36px;
+    line-height: 41px;
+  }
+
+  .my-skills {
+    margin: 40px 0;
+    background-color: var(--secondary-color);
+    padding: 54px;
+    border-radius: 20px;
+  }
+
+  .my-skills h2 {
+    font-size: 48px;
+  }
+
+  .my-skills .skills h3 {
+    font-size: 24px;
+    margin-top: 100px;
+  }
+
+  .my-skills .skills .skills-container {
+    gap: 94px;
+  }
+
+  .my-skills .skills .skills-container svg {
+    width: 44px;
+    height: 44px;
+  }
+
+  .my-projects h2 {
+    font-size: 48px;
+    margin-bottom: 40px;
+  }
+
+  .my-projects .projects .slider div h3 {
+    display: block;
+    margin: 0 auto;
+    color: var(--primary-color);
+    font-size: 36px;
+  }
+
+  .my-projects .projects > a svg {
+    width: 44px;
+    height: 44px;
+  }
+
+  .contact h2 {
+    font-size: 48px;
+  }
+
+  .contact p {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+
+  .contact .contacts svg {
+    width: 44px;
+    height: 44px;
+  }
+
+  .experiences h2 {
+    font-size: 48px;
+  }
+
+  .experiences > p {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+
+  .experiences .timeline p {
+    font-size: 14px;
+  }
+
+  .experiences .timeline .line .big-line {
+    width: 90%;
+    height: 1px;
+    background: var(--contrast-color);
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .experiences .timeline .line .big-line::before {
+    font-size: 14px;
+    left: -30px;
+  }
+
+  .experiences .timeline .line .big-line::after {
+    font-size: 14px;
+    right: -30px;
+  }
+}
