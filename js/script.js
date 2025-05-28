@@ -2,7 +2,13 @@ const slider = tns({
   container: ".slider",
   items: 1,
   slideBy: "page",
+  mouseDrag: "true",
   autoplay: true,
+  responsive: {
+    992: {
+      items: 2,
+    },
+  },
 });
 
 const sections = document.querySelectorAll("section");
